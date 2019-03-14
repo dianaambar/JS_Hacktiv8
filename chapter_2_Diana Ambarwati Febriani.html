@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <script type="text/javascript">
+        var angka1 = parseInt(prompt('masukkan angka pertama'));
+        var angka2 = parseInt(prompt('Masukkan angka kedua'));
+        var operasi = prompt('Pilih Operasi Matematika (+,-,*,/,^,min,max');
+        var nilai;
+
+        if(operasi == '+'){
+            nilai = angka1 + angka2;
+            alert(nilai);
+        }
+        else if(operasi == '-'){
+            nilai = angka1 - angka2;
+            alert(nilai);
+        }
+        else if(operasi == '*'){
+            nilai = angka1 * angka2;
+            alert(nilai);
+        }
+        else if (operasi == '/'){
+            nilai = angka1/angka2;
+            alert(nilai);
+        }
+        else if(operasi == '^'){
+            nilai = Math.pow(angka1,angka2);
+            alert(nilai);
+        }
+        else if(operasi == 'min' ){
+            nilai = Math.min(angka1, angka2);  
+            alert(nilai); 
+        }
+        else if(operasi =='max'){
+            nilai = Math.max(angka1, angka2);
+            alert(nilai);
+        }
+        else{
+            alert('operasi tidak tersedia')
+        }
+
+        
+    </script>
+</body>
+</html>
